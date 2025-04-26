@@ -1,9 +1,9 @@
 % family relations 
 
-parents(john,bob).
-parents(bob,sum).
-parents(koli,moli).
-parents(moli,nodi).
+parent(john,bob).
+parent(bob,sum).
+parent(koli,moli).
+parent(moli,nodi).
 
 % Food preferences 
 
@@ -11,4 +11,4 @@ likes(john,pizza).
 likes(moli,pasta). 
 likes(bob,soshi). 
 
-grandParent(X,Y):-parents(X,Z),parents(Z,Y).
+grandParent(X,Y):-parent(X,Z),parent(Z,Y).
